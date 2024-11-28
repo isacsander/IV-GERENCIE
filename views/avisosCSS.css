@@ -100,6 +100,8 @@ form textarea {
 }
 
 form input[type="submit"] {
+    display: block;
+    margin: 20px auto 0;
     background-color: var(--cor-secundaria);
     color: var(--fundo);
     border: none;
