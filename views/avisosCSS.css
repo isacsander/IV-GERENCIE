@@ -1,0 +1,115 @@
+/* avisos.css */
+
+/* Paleta de cores */
+:root {
+    --cor-primaria: #FFCFEF;
+    --cor-secundaria: #0A97B0;
+    --cor-terciaria: #0A5EB0;
+    --cor-quartenaria: #2A3335;
+    --fundo: #FFFFFF;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--fundo);
+    color: var(--cor-quartenaria);
+    line-height: 1.6;
+}
+
+/* Header e Navbar */
+header {
+    background-color: var(--cor-secundaria);
+    color: var(--fundo);
+    padding: 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--fundo);
+    text-decoration: none;
+}
+
+nav .nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav .nav-list li a {
+    color: var(--fundo);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav .nav-list li a:hover {
+    background-color: var(--cor-terciaria);
+}
+
+/* Formulário */
+form {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid var(--cor-quartenaria);
+    border-radius: 10px;
+    background-color: var(--cor-primaria);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    color: var(--cor-terciaria);
+    margin-bottom: 20px;
+}
+
+form h5 {
+    color: var(--cor-quartenaria);
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid var(--cor-quartenaria);
+    border-radius: 5px;
+    font-size: 1rem;
+    color: var(--cor-quartenaria);
+}
+
+form textarea {
+    resize: none;
+}
+
+form input[type="submit"] {
+    background-color: var(--cor-secundaria);
+    color: var(--fundo);
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--cor-terciaria);
+}

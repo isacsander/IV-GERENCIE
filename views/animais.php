@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="animais.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="animaisCSS.css">
+    <title>Cadastre seu Animal</title>
 
     <style>
         .container{
@@ -21,7 +21,7 @@
                 <li><a href="reserva.php">Reserva</a></li>
                 <li><a href="animais.php">Animais</a></li>
                 <li><a href="avisos.php">Avisos</a></li>
-                <li><a href="/">Sobre</a></li>
+                <li><a href="login.php">Sair</a></li>
             </ul>
         </nav>
     </header>

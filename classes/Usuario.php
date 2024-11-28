@@ -25,6 +25,7 @@ class Usuario{
         if($usuario && password_verify($senha, $usuario['senha'])){//$usuario -> verifica se a consulta existe; password_verify -> verifica se a senha fornecida corresponde ao hash no banco de dados.; (password_verify é uma função segura do php para comparar senha com hashes).
 
             session_start();//inicia uma nova sessão 
+            $_SESSION['nome_usuario'] = $usuario['nome'];
             $_SESSION['usuario_id'] = $usuario['id']; // id do usuario para identifica-lo em outras paginas
             $_SESSION['tipo_usuario'] = $usuario['tipo_usuario']; //tipo de usuario que determina permissoes no sistema.
             return true;// true se o login for bem-sucedido 

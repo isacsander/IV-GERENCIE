@@ -13,10 +13,20 @@ $descricao = $_POST['descricao'];
 $Aviso = new Avisos();
 try{
     if($Aviso->Registrar_Avisos($titulo, $descricao)){
-        echo "Animalzinho Cadastrado com sucesso :) !!!";
+        echo "
+        <script> 
+            alert('Aviso publicado!');
+            window.location.href = '../views/avisos.php'
+        </script>
+        ";
         exit();
     }else{
-        echo "Erro ao cadastrar seu animalzinho";
+        echo "
+        <script> 
+            alert('Falha em publicar o aviso!');
+            window.location.href = '../views/avisos.php'
+        </script>
+        ";
     }
 }catch(Exception $e){
     echo "Erro: " . $e->getMessage();

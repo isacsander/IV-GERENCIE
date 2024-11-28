@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="avisos.css">
+    <link rel="stylesheet" href="avisosCSS.css">
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
                 <li><a href="reserva.php">Reserva</a></li>
                 <li><a href="animais.php">Animais</a></li>
                 <li><a href="avisos.php">Avisos</a></li>
-                <li><a href="/">Sobre</a></li>
+                <li><a href="login.php">Sair</a></li>
             </ul>
         </nav>
     </header>

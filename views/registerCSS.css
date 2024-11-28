@@ -1,0 +1,86 @@
+/* register.css */
+
+/* Paleta de cores */
+:root {
+    --cor-primaria: #FFCFEF;
+    --cor-secundaria: #0A97B0;
+    --cor-terciaria: #0A5EB0;
+    --cor-quartenaria: #2A3335;
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, var(--cor-primaria), var(--cor-secundaria));
+    color: var(--cor-quartenaria);
+}
+
+/* Tela de Registro */
+.tela-register {
+    background-color: var(--cor-primaria);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.tela-register h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: var(--cor-terciaria);
+}
+
+.tela-register form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tela-register form label {
+    text-align: left;
+    font-weight: bold;
+    color: var(--cor-quartenaria);
+}
+
+.tela-register form input[type="text"],
+.tela-register form input[type="email"],
+.tela-register form input[type="password"],
+.tela-register form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--cor-quartenaria);
+    border-radius: 5px;
+    color: var(--cor-quartenaria);
+}
+
+.tela-register form select {
+    background-color: white;
+}
+
+.tela-register form button {
+    background-color: var(--cor-secundaria);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.tela-register form button:hover {
+    background-color: var(--cor-terciaria);
+}
