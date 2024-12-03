@@ -38,6 +38,7 @@ $avisos = $Aviso->Listar();
         <h1>Bem-Vindo, <?php echo htmlspecialchars($_SESSION['nome_usuario']); ?></h1>
         <br><br><br>
         <div>
+            <h1>Animais no condominio!</h1>
             <table class="table">
                 <thead>
                     <tr>
